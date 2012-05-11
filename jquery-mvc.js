@@ -6,17 +6,34 @@
 
 	App.Controller.List = {
 		cache: {
-			'root': $('#page')
+			'root': $('#page'),
+			'list': $('#list'),
+			'addTemplate': $($('#list-add-template').html())
 		},
+
 		bindEvents: function()
 		{
-			this.cache.root.on('click', '.add-item', this.addItem)
+			var self = this
+			this.cache.root.on('click', '.add-item', function() { self.addItem.call(self, this) })
+			this.cache.root.on('click', '.remove-item', function() { self.removeItem.call(self, this) })
 		},
 		
 		addItem: function()
 		{
+			var element = arguments[0]
+			
+			var tmpl = this.cache.addTemplate.clone()
+			tmpl.find('.name').html(new Date().getTime())
+			this.cache.list.append(tmpl)
 			
 			return false;
+		},
+		
+		removeItem: function() 
+		{
+			var element = $(arguments[0])
+			
+			element.parent().remove()
 		}
 	}
 	 

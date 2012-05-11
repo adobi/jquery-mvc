@@ -45,6 +45,11 @@
 		<!-- Le javascript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
+		
+		<script type="text/tmpl" id ="list-add-template">
+				<li><span class="name"></span><a href="#" class="remove-item">remove</a></li>
+		</script>
+		
 		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 		<script src="jquery-mvc.js"></script>
 		
