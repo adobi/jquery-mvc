@@ -14,26 +14,24 @@
 		bindEvents: function()
 		{
 			var self = this
-			this.cache.root.on('click', '.add-item', function() { self.addItem.call(self, this) })
-			this.cache.root.on('click', '.remove-item', function() { self.removeItem.call(self, this) })
+			this.cache.root.on('click', '.add-item', function(e) { self.addItem.call(self, this, e) })
+			this.cache.root.on('click', '.remove-item', function(e) { self.removeItem.call(self, this, e) })
 		},
 		
-		addItem: function()
+		addItem: function(elem, event)
 		{
-			var element = arguments[0]
-			
 			var tmpl = this.cache.addTemplate.clone()
 			tmpl.find('.name').html(new Date().getTime())
 			this.cache.list.append(tmpl)
 			
-			return false;
+			event.preventDefault()
 		},
 		
-		removeItem: function() 
+		removeItem: function(elem, event) 
 		{
-			var element = $(arguments[0])
+			$(elem).parent().remove()
 			
-			element.parent().remove()
+			event.preventDefault()
 		}
 	}
 	 
