@@ -6,7 +6,7 @@
       App.Utils = App.Utils || {},
       App.Helpers = App.Helpers || {}
 
-	head.js('router.js', 'list.js', 'utils.js', function() {
+	head.js('app/core/router.js', 'app/core/model.js', 'app/controllers/list.js', 'app/controllers/contact.js', 'app/core/utils.js', function() {
 	    
   	  App.Utils.onLoad()
   

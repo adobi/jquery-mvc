@@ -27,9 +27,8 @@
 			
 			<div class="well">
 				<h6>
-  				  
   				<a href="#">home</a> &nbsp;&nbsp;&nbsp;
-  				<a href="#!/page">page</a> &nbsp;&nbsp;&nbsp;
+  				<a href="#!/list">list</a> &nbsp;&nbsp;&nbsp;
   				<a href="#!/contact">contact</a>
 				</h6>
 			</div>
@@ -43,16 +42,13 @@
 		<!-- Le javascript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		
-		<script type="text/tmpl" id ="list-add-template">
-				<li><span class="name"></span><a href="#" class="remove-item">remove</a></li>
-		</script>
+
 		
 		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 		<script src="https://raw.github.com/cowboy/jquery-hashchange/v1.3/jquery.ba-hashchange.min.js"></script>
 		<script src="https://raw.github.com/headjs/headjs/v0.96/dist/head.min.js"></script>
 		
-		<script src="jquery-mvc.js"></script>
+		<script src="app/jquery-mvc.js"></script>
 		
 	</body>
 </html>
