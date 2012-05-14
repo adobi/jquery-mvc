@@ -27,17 +27,15 @@
 			
 			<div class="well">
 				<h6>
-				<a href="#!/page">page</a> &nbsp;&nbsp;&nbsp;
-				<a href="#!/page">contact</a>
+  				  
+  				<a href="#">home</a> &nbsp;&nbsp;&nbsp;
+  				<a href="#!/page">page</a> &nbsp;&nbsp;&nbsp;
+  				<a href="#!/contact">contact</a>
 				</h6>
 			</div>
 			
 			<div class="well" id = "page">
-					<a href="#" class="btn add-item">Add list item</a>
-					
-					<ul id="list">
-							
-					</ul>
+
 			</div>
 
 		</div> <!-- /container -->
@@ -51,6 +49,9 @@
 		</script>
 		
 		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script src="https://raw.github.com/cowboy/jquery-hashchange/v1.3/jquery.ba-hashchange.min.js"></script>
+		<script src="https://raw.github.com/headjs/headjs/v0.96/dist/head.min.js"></script>
+		
 		<script src="jquery-mvc.js"></script>
 		
 	</body>
